@@ -43,7 +43,7 @@ public class Main {
         // ¿Podemos modificarla?
         lista.add(100);   //  SÍ
         lista.remove(1);  //  SÍ
-        lista.set(0, 999); // ✅SÍ
+        lista.set(0, 999); // SÍ
 
         System.out.println(lista);
 
