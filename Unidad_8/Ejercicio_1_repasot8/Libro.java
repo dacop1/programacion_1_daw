@@ -1,0 +1,56 @@
+package Ejercicio_1_repasot8;
+
+public class Libro implements Comparable<Libro> {
+	private String titulo;
+	private String autor;
+	private int isbn;
+	
+	
+	public Libro() {}
+
+	public Libro(String titulo) {
+		this.titulo = titulo;
+	}
+	
+	public Libro(String titulo, String autor,int isbn) {
+		this.titulo = titulo;
+	}
+
+	public String getTitulo() {
+		return titulo;
+	}
+
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+
+	public String getAutor() {
+		return autor;
+	}
+
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+
+	public int getIsbn() {
+		return isbn;
+	}
+
+	public void setIsbn(int isbn) {
+		this.isbn = isbn;
+	}
+
+	
+	
+	   @Override
+	    public int compareTo(Libro o) {
+	       if (this.isbn > o.isbn) {
+	    	   return 1;
+	       }
+	       
+	       if (this.isbn < o.isbn) {
+	    	   return -1;
+	       }
+	       return 0;
+	   }
+}
